@@ -23,7 +23,7 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
  * @create: 2020-04-20 00:10
  **/
 @Configuration
-@EnableAuthorizationServer
+@EnableAuthorizationServer //对授权服务器做进一步的详细配置，AuthorizationServer 类记得加上 @EnableAuthorizationServer 注解，表示开启授权服务器的自动化配置
 public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
 
     @Autowired
